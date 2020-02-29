@@ -35,7 +35,7 @@ div.tools button.btn-icon {
   width: 100%;
   margin: 0;
   margin-bottom: 15px;
-  padding: 10px 0;
+  padding: 15px;
   border: none;
   background-color: rgba(235, 224, 245, 0.5);
   color: rgb(137, 137, 255);
@@ -118,6 +118,10 @@ textarea {
 }
 div.preview.full-width {
   width: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1000px) {

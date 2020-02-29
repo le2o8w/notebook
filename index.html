@@ -41,16 +41,16 @@
           </div>
           <div class="tools">
             <button class="btn-icon" v-on:click="add" aria-label="Add a note">
-              ➕
+              <img src="/icons/add.svg" alt="Ajouter une note.">
             </button>
             <button class="btn-icon" v-on:click="deleteItem" aria-label="Delete selected note">
-              🗑️
+              <img src="/icons/bin.svg" alt="Supprimer cette note.">
             </button>
             <button class="btn-icon" v-if="!isEditing" v-on:click="toggleEditor" aria-label="Edit selected note">
-              🖊️
+              <img src="/icons/pencil.svg" alt="Modifier cette note.">
             </button>
             <button class="btn-icon" v-if="isEditing" v-on:click="toggleEditor" aria-label="Confirm modifications">
-              ✔️
+              <img src="/icons/tick.svg" alt="Confirmer modifications.">
             </button>
           </div>
           <div class="text">
@@ -68,7 +68,7 @@
         <div class="empty">
           <div>
             <h1>Hello ! 👋</h1>
-            <button v-on:click="add">Add note</button>
+            <button v-on:click="add">Créer une note</button>
           </div>
         </div>
       </template>

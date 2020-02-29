@@ -17,10 +17,10 @@ const app = new Vue({
   el: "#app",
   name: "Notebook",
   data: {
-    notes: [{id: 0, title: "Untitled", content: "# New note"}],
+    notes: [{id: 0, title: "Sans titre", content: "# Nouvelle note"}],
     selectedId: 0,
     searchText: "",
-    isEditing: false
+    isEditing: true
   },
   computed: {
     note() {
@@ -82,8 +82,8 @@ const app = new Vue({
       const newId = Math.max(-1, ...this.notes.map(item => item.id)) + 1;
       this.notes.push({
         id: newId,
-        title: "New " + (newId + 1),
-        content: "# Saisir texte"
+        title: "Note " + (newId + 1),
+        content: "### Qu'est-ce que vous avez en tête ?"
       });
       this.selectedId = newId;
     },
